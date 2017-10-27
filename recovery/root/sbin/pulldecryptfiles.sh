@@ -17,7 +17,7 @@ cp /system/bin/qseecomd /sbin/qseecomd;
 
 # Copy proprietary libraries
 mkdir -p /vendor/lib64/hw;
-cp /system/vendor/lib64/hw/keystore.msm8996.so /vendor/lib64/hw/keystore.msm8996.so;
+cp /system/vendor/lib64/hw/keystore.msm8952.so /vendor/lib64/hw/keystore.msm8952.so;
 cp /system/vendor/lib64/lib-sec-disp.so /vendor/lib64/lib-sec-disp.so;
 cp /system/vendor/lib64/libGPreqcancel.so /vendor/lib64/libGPreqcancel.so;
 cp /system/vendor/lib64/libGPreqcancel_svc.so /vendor/lib64/libGPreqcancel_svc.so;

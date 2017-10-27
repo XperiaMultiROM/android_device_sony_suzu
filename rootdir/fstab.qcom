@@ -15,5 +15,5 @@
 /dev/block/bootdevice/by-name/modemst1     /boot/modem_fs1 emmc defaults                                                      defaults
 /dev/block/bootdevice/by-name/modemst2     /boot/modem_fs2 emmc defaults                                                      defaults
 
-/devices/soc.0/7864900.sdhci/mmc_host/mmc*  auto         auto   nosuid,nodev                                                  voldmanaged=sdcard1:auto,encryptable=userdata
+/devices/soc.0/7824900.sdhci/mmc_host/mmc*  auto         auto   nosuid,nodev                                                  voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/msm_hsusb_host/usb*       auto         auto   nosuid,nodev                                                  voldmanaged=usb:auto

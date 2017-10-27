@@ -19,22 +19,22 @@ const char *mr_init_devices[] =
     // Internal storage
     "/sys/block/mmcblk0rpmb",
     "/dev/block/bootdevice/by-name/*",
-    "/sys/devices/soc/7464900.sdhci",
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0",
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001",
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/*",
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p16", // boot
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p17", // keymaster
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p23", // modem
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p33", // modemst1
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p34", // modemst2
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p35", // cache
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p36", // persist
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p32", // ssd
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p55", // system
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p54", // userdata
-    "/sys/devices/soc/7464900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0rpmb", // RPMB
+    "/sys/devices/soc.0/7824900.sdhci",
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0",
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001",
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/*",
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p22", // boot
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p34", // keymaster
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p3", // modem
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p14", // modemst1
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p15", // modemst2
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p24", // cache
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p25", // persist
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p4", // ssd
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p52", // system
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p51", // userdata
+    "/sys/devices/soc.0/7824900.sdhci/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0rpmb", // RPMB
 
     // External storage
     "/sys/block/mmcblk1",
@@ -55,10 +55,10 @@ const char *mr_init_devices[] =
     "/sys/class/input/input*",
     "/sys/class/misc/uinput",
     "/sys/class/tty/ptmx",
-    "/sys/devices/soc/soc:gpio_keys/input*",
+    "/sys/devices/soc.0/gpio_keys.104/input*",
     "/sys/devices/virtual/input*",
     "/sys/devices/virtual/misc/uinput",
-    "/sys/devices/soc/75ba000.i2c/i2c-12/12-002c/clearpad",
+    "/sys/devices/soc.0/78b8000.i2c/i2c-4/4-002c/clearpad",
 
     // ADB
     "/sys/devices/virtual/tty/ptmx",
@@ -71,7 +71,7 @@ const char *mr_init_devices[] =
     // USB
     "/sys/bus/usb",
     "/sys/bus/platform/drivers/xhci-hcd*",
-    "/sys/devices/soc/6a00000.ssusb/6a00000.dwc3",
+    "/sys/devices/soc.0/6a00000.ssusb/6a00000.dwc3",
 
     // Encryption
     "/sys/devices/virtual/icesdcc/icesdcc",

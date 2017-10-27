@@ -5,8 +5,8 @@
 const char *mr_fake_properties[][2] =
 {
     //{property, value}
-    { "sys.keymaster.loaded", "true" },               // used by keystore.msm8996.so / keystore.default.so
-    { "ro.boot.bootdevice", "7464900.sdhci" },        // used by libcryptfs_hw.so
+    { "sys.keymaster.loaded", "true" },               // used by keystore.msm8952.so / keystore.default.so
+    { "ro.boot.bootdevice", "7824900.sdhci" },        // used by libcryptfs_hw.so
     { "ro.crypto.state", "encrypted" },               // used by libcryptfs.so
     { NULL, NULL}
 };
